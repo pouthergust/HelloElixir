@@ -1,2 +1,2 @@
 # HelloElixir
- Elixir tests
+ Tests with Phoenix LiveView
