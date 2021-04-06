@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <%= csrf_meta_tag() %>
+    <%= live_title_tag assigns[:page_title] || "Hello", suffix: " · Phoenix Framework" %>
+    <link phx-track-static rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/styles.css") %>"/>
+    <script defer phx-track-static type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+    <link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Ceviche+One|Eagle+Lake|New+Rocker|Pirata+One|Shojumaru|UnifrakturCook:700">
+	<!-- ALTERAÇÃO DE FONTES
+		font-family: 'Ceviche One', cursive;
+		font-family: 'Shojumaru', cursive;
+		font-family: 'Pirata One', cursive;
+		font-family: 'New Rocker', cursive;
+		font-family: 'Eagle Lake', cursive;
+		font-family: 'UnifrakturCook', cursive;
+
+		head>
+
+  </head>
+		-->
+</head>
+
+<body style="background-color: darkgrey;" id="container">
+	<header>
+		<img src="<%= Routes.static_path(@conn, "/images/fd.png") %>" class="top">
+		<div style="background-color: grey;text-align: center;color: #fff;">
+			<h1 style=" padding: 35px; font-size: 50px;color: black;margin-bottom: -2%;">Leis do japão
+				<span style=" font-size: 15px;color: white;">por Gabriel Henrique</span>
+			</h1><br>
+			<marquee style="position: relative;margin-top: -5%">[Insira um texto muito legal aqui]</marquee>
+		</div>
+		<img src="<%= Routes.static_path(@conn, "/images/fc2.png") %>">
+	</header>
+	<main class="slides">
+		<hr class="divider">
+		<>
+			<article>
+				<img src="<%= Routes.static_path(@conn, "/images/foto1.jpg") %>" alt="Duelos" style="width: 83%;">
+				<h2>Duelos</h2>
+				<p>Apesar de ser uma lei antiga, de 1889, desafiar alguém para um duelo ou duelar pode resultar em
+					prisão,
+					inclusive para quem apenas testemunhou o duelo. Aos duelistas, pena de 6 meses a 5 anos de
+					prisão.Miyamoto Musashi e Sasaki Kojiro estariam presos se fosse nos dias de hoje. E por
+					incrível
+					que
+					pareça, hoje em dia ainda tem gente que é presa por duelo</p>
+			</article>
+			<article>
+				<img src="<%= Routes.static_path(@conn, "/images/foto2.jpg") %>" alt="Insultos" style="width: 98%;">
+				<h2>Insultar aqueles que rejeitaram seu duelo</h2>
+				<p>Esta lei emprega a palavra kettō (duelo), que remonta a época em que lutadores de espadas
+					desafiavam
+					uns
+					aos outros nas noite de lua cheia. No entanto, esta lei centenária pode se aplicar hoje a
+					qualquer
+					desafio criado com antecedência onde as vidas dos concorrentes estão em perigo. Em termos
+					práticos:
+					Se
+					alguém te insultar pelo fato de você ter se recusado a participar de uma sessão roleta russa,
+					poderá
+					ser
+					processado por isso.</p>
+				</section>
+			</article>
+		</div>
+		<hr class="divider">
+	</main>
+	<footer id="bottom">
+		<button>
+			<a href="https://1drv.ms/p/s!AmYVLGEU9CvOhzeqUt2WvsQ1LQtY?e=ovMlBu" target="blank">Visualizar os slides</a>
+		</button>
+	</footer>
+</body>
+
+</html>
